@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 0;
+  // background-image: url('./images/background_image.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-break {
+  margin-top: 3rem;
+  width: 80%;
+}

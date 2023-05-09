@@ -1,0 +1,47 @@
+.footer {
+  padding: 2rem;
+  // margin: 0 auto;
+  width: 100%;
+  background-color: #21292C;
+  color: white;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  button {
+    background-color: #21292C;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buttons {
+    margin: 0 auto;
+  }
+
+}
+
+.logo {
+  width: 3rem;
+  height: auto;
+  margin: 0.2rem;
+}  
+
+.email {
+  margin-top: 10px;
+}
+
+@media (min-width: 500px) {
+  footer {
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 40%
+    }
+  }
+}

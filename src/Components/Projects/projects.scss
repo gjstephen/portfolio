@@ -1,0 +1,243 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.project-page {
+  // width: 70%;
+  margin: 0 auto;
+}
+
+.project-list {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.project {
+  // width: 25rem;
+  width: 100%;
+  // height: 18rem;
+  // border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  background-color: #fffefe;
+  box-shadow: 0.2rem 0.3rem 1rem 0.5rem rgba(0, 0, 0, 0.352);
+  margin-bottom: 1.5rem;
+  text-align: left;
+
+  div {
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+  }
+
+  .project-img {
+    min-width: 5rem;
+    max-width: 100%;
+    // max-width: 8rem;
+    // max-width: 25rem;
+    min-height: 100%;
+    // max-height: 18rem;
+    // width: 100%;
+    
+    // height: 13rem;
+    object-fit: cover;
+    object-position: 0% 0%;
+    // overflow: unset;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    left: 0;
+  }
+
+  h3 {
+    width: 80%;
+    margin: 1rem 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+    background-color: #fffefe;
+    white-space: nowrap;
+    text-overflow: nowrap;
+    overflow: hidden;
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
+  button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .gh-logo {
+    width: 1.5rem;
+    height: auto;
+    margin: 0.2rem;
+  }
+}
+
+.project-wrapper {
+  // display: grid;
+  // grid-template-rows: 1fr 1fr 6fr 0.2fr 1fr;
+  // grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  width: 95%;
+  height: inherit;
+  margin: 0 auto;
+  align-items: left;
+  align-content: left;
+
+  hr {
+    width: 100%;
+  }
+}
+
+.project-text {
+  width: 95%;
+  margin: 0.7rem 0;
+  // margin-top: 0.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: none;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-left: 0px;
+  width: 90%;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.site-list {
+  gap: 0;
+  justify-content: space-between;
+  max-width: 15rem;
+}
+
+.tech {
+  font-size: 0.8rem;
+}
+
+.project-link {
+  color: black;
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 2rem;
+    width: 90%;
+  }
+
+  .project {
+    // width: 20rem;
+    width: 100%;
+    height: 18rem;
+    // border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  
+    div {
+      border-top-right-radius: 10%;
+      border-top-left-radius: 10%;
+    }
+  
+    .project-img {
+      min-width: 20rem;
+      max-width: 20rem;
+      min-height: 18rem;
+      max-height: 18rem;
+      
+      // height: 13rem;
+      object-fit: cover;
+      object-position: 0% 0%;
+      // overflow: unset;
+      border-top-right-radius: 1rem;
+      border-bottom-left-radius: 0;
+      left: 0;
+    }
+  
+    h3 {
+      width: 80%;
+      margin: 1rem 0;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+  
+    button {
+      border: 1px solid lightgrey;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      cursor: pointer;
+      background-color: #fffefe;
+  
+      p {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+  
+    button:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .gh-logo {
+      width: 1.5rem;
+      height: auto;
+      margin: 0.2rem;
+    }
+  }
+
+  .project-wrapper {
+    display: grid;
+    // grid-template-rows: 1fr 1fr 6fr 0.2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    width: 95%;
+    height: inherit;
+    margin: 0 auto;
+    align-items: left;
+    align-content: left;
+  
+    hr {
+      width: 100%;
+    }
+  }
+
+  .project-text {
+    display: inline;
+  }
+}

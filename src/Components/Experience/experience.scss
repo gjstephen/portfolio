@@ -1,0 +1,132 @@
+.experience {
+  margin-top: 2rem;
+}
+
+.exp-header {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.basic-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.front-info {
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  gap: 8rem;
+}
+
+.tile {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tile-front {
+  h4 {
+    margin-bottom: 0;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+}
+
+.tile:hover {
+  cursor: pointer;
+  background-color: azure;
+  border-radius: 1rem;
+ }
+
+.tile-back {
+  display: none;
+}
+
+.job-department {
+  font-style: italic;
+}
+
+.info {
+  background-color: aliceblue;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.2rem 0.5rem rgb(98, 96, 96);
+  margin-bottom: 2rem;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.job-further-info {
+  display: none;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.7);
+
+  .tile-back {
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+}
+
+.exit-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.education, .experience {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 400px) {
+  .basic-info {
+    visibility: hidden;
+  }
+  
+  .exp-header {
+    float: left;
+    margin-left: 10%;
+  }
+
+  .basic-info {
+    // visibility: visible;
+    width: 50%;
+    // margin: 0 auto;
+    margin-left: 40%;
+  }
+
+  .tile {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+}
+
+.unhidden {
+  display: block;
+  visibility: visible;
+  // width: 80%;
+}
