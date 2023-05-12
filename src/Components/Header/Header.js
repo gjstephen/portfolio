@@ -3,7 +3,7 @@ import './header.scss'
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header" id='header'>
       <div>
         <h1>George Stephen</h1>
         <h3>Junior Developer</h3>

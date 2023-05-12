@@ -27,7 +27,7 @@ function Education() {
   }
 
   return (
-    <div className="education">
+    <div className="education" id='education'>
       <div className="exp-header">
         <h1 className='edu-title'>Education</h1>
         <hr />

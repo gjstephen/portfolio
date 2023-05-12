@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+.profile {
+  margin: 0 auto;
+}
+
 .about-icons {
   margin-top: 2rem;
 
@@ -40,9 +44,13 @@ embed {
   height: 800px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
   .about-blurb {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .profile {
+    margin: 0;
   }
 }

@@ -1,7 +1,7 @@
 .education {
   // width: 80%;
   // margin: 0 auto;
-  margin-top: 2rem;
+  padding-top: 3rem;
   margin-bottom: 4rem;
 }
 
@@ -48,7 +48,7 @@
   // grid-template-columns: 1fr 1fr;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 600px) {
   .resume {
     display: grid;
     grid-template-columns: 1fr 1fr;

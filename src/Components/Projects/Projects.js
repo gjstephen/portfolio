@@ -57,7 +57,7 @@ function Projects() {
   }
 
   return (
-    <div className="project-page">
+    <div className="project-page" id='portfolio'>
       <h1>Projects</h1>
       <div className='project-list'>
       {renderProjectList()}

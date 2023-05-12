@@ -1,13 +1,13 @@
 import './navBar.scss'
 import hamburger from '../../images/hamburger.svg'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, Navigate } from 'react-router-dom'
 // import homeIcon from '../icons/home-icon.png'
 import homeIcon from '../../icons/home-icon.svg'
 import experienceIcon from '../../icons/experience-icon.svg'
+import resume from '../../resume.pdf'
 
 function NavBar() {
   const activeMenu = () => {
-    console.log('meow')
     document.querySelector('.drop-list').classList.toggle('drop-active')
     document.querySelector('.drop-list').classList.toggle('drop-inactive')
   } 
@@ -23,28 +23,34 @@ function NavBar() {
           </svg>
           
           <h2>Menu</h2>
-
-          <div className="drop-list drop-inactive">
-            <Link className='drop-link' to='/portfolio/'>Home</Link>
-            {/* <Link className='drop-link' to='/portfolio/experience'>Experience</Link> */}
-            {/* <Link className='drop-link' to='/portfolio/education'>Education</Link> */}
-            <Link className='drop-link' to='/portfolio/projects'>Projects</Link>
-            <Link className='drop-link' to='/portfolio/resume'>Resume</Link>
-            <hr />
-            <a _target='blank' href="https://github.com/gjstephen">GitHub</a>
-          </div>
         </button>
+
+        <div className="drop-list drop-inactive">
+            <li>
+              <a className='portfolio-link' href="#portfolio">Projects</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#education">Education</a>
+            </li>
+            <hr />
+            <a target='_blank' href="https://www.linkedin.com/in/georgejstephen/">LinkedIn</a>
+            <a target='_blank' href="https://github.com/gjstephen">GitHub</a>
+            <a href={resume} download='G Stephen Resume'>Resume</a>
+          </div>
       </section>
 
       <ul className="nav-list"  >
-        <li>
+        {/* <li>
           <NavLink 
             className='nav-link'
             to='/portfolio/'
           >
             Home
           </NavLink>
-        </li>
+        </li> */}
         {/* <li>
           <NavLink 
             className='nav-link' 
@@ -62,29 +68,33 @@ function NavBar() {
           </NavLink>
         </li> */}
         <li>
-          <NavLink 
-            className='nav-link' 
-            to='/portfolio/projects'
-          >
-            Projects
-          </NavLink>
+          <a className='portfolio-link' href="#header">Home</a>
         </li>
         <li>
+          <a className='portfolio-link' href="#portfolio">Projects</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        {/* <li>
           <NavLink 
             className='nav-link' 
             to='/portfolio/resume'
           >
             Resume
           </NavLink>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <NavLink 
             className='nav-link' 
             to='/portfolio/contact-me'
           >
             Contact Me
           </NavLink>
-        </li>
+        </li> */}
       </ul>
 {/* 
       <section className="bottom-nav">
